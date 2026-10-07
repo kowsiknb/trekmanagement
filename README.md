@@ -78,3 +78,44 @@ A full-stack Trek Management and Mountain Safety Web Application designed for ou
 - `GET /api/treks/:id/checklist` - Retrieve generated gear checklist items.
 - `POST /api/risk-analysis` - Calculate risk score, explanations, and ML ensemble predictions for given weather payload.
 - `GET /api/health` - Health check status.
+
+---
+
+## 🚀 Deploying to Vercel
+
+The project is configured for Vercel deployment with serverless functions and Single Page Application (SPA) routing.
+
+### Option 1: Deploy via GitHub (Recommended)
+
+1. Push this repository to **GitHub**.
+2. Go to [vercel.com](https://vercel.com) and click **"Add New Project"**.
+3. Import your GitHub repository.
+4. Vercel will automatically detect **Vite**:
+   - **Framework Preset**: `Vite`
+   - **Build Command**: `npm run build`
+   - **Output Directory**: `dist`
+5. Under **Environment Variables**, add:
+   - `VITE_GOOGLE_MAPS_API_KEY`: *(Your Google Maps API key, pre-configured in code)*
+6. Click **Deploy**.
+
+### Option 2: Deploy via Vercel CLI
+
+```bash
+# 1. Install Vercel CLI (if not already installed)
+npm install -g vercel
+
+# 2. Login to your Vercel account
+vercel login
+
+# 3. Deploy to preview
+vercel
+
+# 4. Deploy to production
+vercel --prod
+```
+
+### Configuration Files Added for Vercel:
+- **`vercel.json`**: Sets up SPA routing for the React frontend (`dist/index.html`) and forwards `/api/*` requests to the serverless function.
+- **`api/index.ts`**: Express REST API serverless handler for `/api/treks`, `/api/health`, and `/api/risk-analysis`.
+- **`.vercelignore`**: Excludes local cache and sensitive files from the Vercel deployment bundle.
+
