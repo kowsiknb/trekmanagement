@@ -138,7 +138,14 @@ export const UserDashboard: React.FC<UserDashboardProps> = ({
         <div className="flex items-center gap-3">
           <div className="w-11 h-11 rounded-full bg-emerald-800 text-white flex items-center justify-center font-bold text-lg font-mono overflow-hidden">
             {user.avatarUrl ? (
-              <img src={user.avatarUrl} alt={user.name} className="w-full h-full object-cover" />
+              <img
+                src={user.avatarUrl}
+                alt={user.name}
+                onError={(e) => {
+                  (e.currentTarget as HTMLElement).style.display = 'none';
+                }}
+                className="w-full h-full object-cover"
+              />
             ) : (
               user.name.charAt(0)
             )}

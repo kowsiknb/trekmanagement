@@ -17,7 +17,21 @@ export const TrekCard: React.FC<TrekCardProps> = ({
   onToggleBookmark,
   searchedLocation
 }) => {
+  const [imgSrc, setImgSrc] = useState(trek.imageUrl);
   const [imageError, setImageError] = useState(false);
+
+  React.useEffect(() => {
+    setImgSrc(trek.imageUrl);
+    setImageError(false);
+  }, [trek.imageUrl]);
+
+  const handleImageError = () => {
+    if (imgSrc !== '/images/hero_mountain.jpg') {
+      setImgSrc('/images/hero_mountain.jpg');
+    } else {
+      setImageError(true);
+    }
+  };
 
   return (
     <div className="group bg-white rounded-2xl border border-stone-200/90 overflow-hidden shadow-sm hover:shadow-md hover:border-emerald-800/40 transition-all duration-200 flex flex-col justify-between">
@@ -26,10 +40,10 @@ export const TrekCard: React.FC<TrekCardProps> = ({
         <div className="relative h-48 w-full overflow-hidden bg-stone-100">
           {!imageError ? (
             <img
-              src={trek.imageUrl}
+              src={imgSrc}
               alt={trek.name}
               referrerPolicy="no-referrer"
-              onError={() => setImageError(true)}
+              onError={handleImageError}
               className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
             />
           ) : (

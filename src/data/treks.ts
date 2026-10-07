@@ -28,7 +28,7 @@ export const TREKS_DATA: Trek[] = [
     campingAllowed: false,
     campingInfo: 'Peak camping banned by Forest Department. Homestays and eco-tents available at Mullodi base village.',
     highlights: ['Lush Shola forest cover', 'Ontimara (Lone Tree) viewpoint', 'Horse-face summit ridge', 'Crystal clear stream crossings', 'Panoramic 360° cloud blanket'],
-    imageUrl: '/src/assets/images/trek_kudremukh_ridge_1791358373135.jpg',
+    imageUrl: '/images/kudremukh.jpg',
     startPoint: {
       name: 'Mullodi Base Camp',
       lat: 13.2185,
@@ -104,7 +104,7 @@ export const TREKS_DATA: Trek[] = [
     campingAllowed: false,
     campingInfo: 'Overnight summit camping restricted. Government forest lodge and cottages available in Kakkabe.',
     highlights: ['Historic Nalknad Palace', 'Big Rock campsite area', 'Coffee and cardamom plantations', 'Rolling mist panoramas'],
-    imageUrl: '/src/assets/images/trek_kudremukh_ridge_1791358373135.jpg',
+    imageUrl: '/images/tadiandamol.jpg',
     startPoint: {
       name: 'Kakkabe Base / Palace Road',
       lat: 12.2468,
@@ -176,7 +176,7 @@ export const TREKS_DATA: Trek[] = [
     campingAllowed: false,
     campingInfo: 'Night camping is forbidden. Hiking is permitted between 3:30 AM and 9:00 AM under Karnataka Eco Tourism guidelines.',
     highlights: ['Cloud bed sunrise phenomenon', 'Historic Tipu Sultan fortress ruins', 'Panoramic sight of Nandi Hills', 'Starry night sky ascent'],
-    imageUrl: '/src/assets/images/hero_mountain_summit_1791358360527.jpg',
+    imageUrl: '/images/skandagiri.jpg',
     startPoint: {
       name: 'Kalavara Village Base',
       lat: 13.4180,
@@ -246,7 +246,7 @@ export const TREKS_DATA: Trek[] = [
     campingAllowed: true,
     campingInfo: 'Tent camping allowed on the vast plateau or inside spacious historic caves.',
     highlights: ['The mighty Konkan Kada cliff', 'Kedareshwar Cave with 4-pillar water lingam', 'Taramati Peak viewpoint', 'Tolar Khind rock climb'],
-    imageUrl: '/src/assets/images/trek_sahayadri_fort_1791358395072.jpg',
+    imageUrl: '/images/harishchandragad.jpg',
     startPoint: {
       name: 'Khireshwar Village',
       lat: 19.3900,
@@ -318,7 +318,7 @@ export const TREKS_DATA: Trek[] = [
     campingAllowed: true,
     campingInfo: 'Designated riverside meadows at Chikka, Balu Ka Ghera, and Shea Goru.',
     highlights: ['Dramatic crossover scenery change', 'Shea Goru river crossing', 'Balu Ka Ghera flower meadows', 'Chandratal Moon Lake visit', 'Snow chutes on the pass'],
-    imageUrl: '/src/assets/images/trek_himalayan_pass_1791358384030.jpg',
+    imageUrl: '/images/hampta_pass.jpg',
     startPoint: {
       name: 'Jobra Hydro Project',
       lat: 32.2530,
@@ -393,7 +393,7 @@ export const TREKS_DATA: Trek[] = [
     campingAllowed: true,
     campingInfo: 'Superb camping grounds at Juda Ka Tal and Kedarkantha Base Camp.',
     highlights: ['Frozen Juda Ka Tal lake', '360° view of 13 Himalayan peaks', 'Sunrise climb from base camp', 'Sankri cultural mountain village'],
-    imageUrl: '/src/assets/images/trek_himalayan_pass_1791358384030.jpg',
+    imageUrl: '/images/kedarkantha.jpg',
     startPoint: {
       name: 'Sankri Village',
       lat: 31.0770,
@@ -464,7 +464,7 @@ export const TREKS_DATA: Trek[] = [
     campingAllowed: false,
     campingInfo: 'No camping on the windswept summit; homestays at Bari village.',
     highlights: ['Steel ladder rock climbing', 'Summit temple of Kalsubai Devi', 'Panoramic views of Alang-Madan-Kulang forts', 'Arthur Lake reservoir vistas'],
-    imageUrl: '/src/assets/images/trek_sahayadri_fort_1791358395072.jpg',
+    imageUrl: '/images/kalsubai.jpg',
     startPoint: {
       name: 'Bari Village',
       lat: 19.6015,
@@ -535,7 +535,7 @@ export const TREKS_DATA: Trek[] = [
     campingAllowed: false,
     campingInfo: 'No camping allowed on the mountain. Numerous resorts & homestays in Meppadi.',
     highlights: ['Natural heart-shaped lake (Hridaya Saras)', 'Rolling Meppadi tea estates', 'Nilgiri biosphere mountain vistas', 'Forest watchtower'],
-    imageUrl: '/src/assets/images/trek_kudremukh_ridge_1791358373135.jpg',
+    imageUrl: '/images/chembra.jpg',
     startPoint: {
       name: 'VSS Forest Office Chembra',
       lat: 11.5200,
@@ -603,7 +603,7 @@ export const TREKS_DATA: Trek[] = [
     campingAllowed: false,
     campingInfo: 'No camping near the waterfall. Hotels and eco-resorts available in Kulem and Mollem.',
     highlights: ['310m high four-tiered waterfall', 'Iconic train crossing the waterfall bridge', 'River crossings in Mollem forest', 'Natural plunge pool'],
-    imageUrl: '/src/assets/images/hero_mountain_summit_1791358360527.jpg',
+    imageUrl: '/images/dudhsagar.jpg',
     startPoint: {
       name: 'Kulem Railway Station',
       lat: 15.3280,
@@ -673,7 +673,7 @@ export const TREKS_DATA: Trek[] = [
     campingAllowed: false,
     campingInfo: 'Camping permitted only at the Forest Department camp area near Bhattara Mane. No camping on the peak.',
     highlights: ['Shesha Parvatha serpent-hood cliff', 'Historic Bhattara Mane lunch experience', 'Pushpagiri temple summit stone', 'Overwhelming 1.5 km vertical climb'],
-    imageUrl: '/src/assets/images/trek_kudremukh_ridge_1791358373135.jpg',
+    imageUrl: '/images/meesapulimala.jpg',
     startPoint: {
       name: 'Kukke Subramanya Temple Base',
       lat: 12.6780,
@@ -745,7 +745,7 @@ export const TREKS_DATA: Trek[] = [
     campingAllowed: true,
     campingInfo: 'Private camp operators rent tents on the ridge; forest rest house also available.',
     highlights: ['Jaw-dropping proximity to Dhauladhar peaks', 'Panoramic sunset over Kangra Valley', 'Historic Magic View Cafe', 'Starlit night camping'],
-    imageUrl: '/src/assets/images/trek_himalayan_pass_1791358384030.jpg',
+    imageUrl: '/images/triund.jpg',
     startPoint: {
       name: 'Galu Devi Temple Trailhead',
       lat: 32.2570,

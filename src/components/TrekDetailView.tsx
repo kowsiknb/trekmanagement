@@ -158,6 +158,9 @@ export const TrekDetailView: React.FC<TrekDetailViewProps> = ({
         <img
           src={trek.imageUrl}
           alt={trek.name}
+          onError={(e) => {
+            (e.currentTarget as HTMLImageElement).src = '/images/hero_mountain.jpg';
+          }}
           className="absolute inset-0 w-full h-full object-cover opacity-40 mix-blend-overlay pointer-events-none"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-stone-950 via-stone-950/60 to-transparent" />

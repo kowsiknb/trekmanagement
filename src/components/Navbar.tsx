@@ -91,7 +91,14 @@ export const Navbar: React.FC<NavbarProps> = ({
               >
                 <div className="w-5 h-5 rounded-full bg-emerald-800 text-white flex items-center justify-center text-[10px] font-mono overflow-hidden">
                   {currentUser.avatarUrl ? (
-                    <img src={currentUser.avatarUrl} alt={currentUser.name} className="w-full h-full object-cover" />
+                    <img
+                      src={currentUser.avatarUrl}
+                      alt={currentUser.name}
+                      onError={(e) => {
+                        (e.currentTarget as HTMLElement).style.display = 'none';
+                      }}
+                      className="w-full h-full object-cover"
+                    />
                   ) : (
                     currentUser.name.charAt(0)
                   )}

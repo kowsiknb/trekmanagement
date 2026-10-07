@@ -23,8 +23,11 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
     <div className="relative rounded-3xl overflow-hidden bg-stone-900 text-white min-h-[420px] flex flex-col justify-center px-6 sm:px-12 py-12 border border-stone-200/40 shadow-xl">
       {/* Background Hero Image with Measured Scrim */}
       <img
-        src="/src/assets/images/hero_mountain_summit_1791358360527.jpg"
+        src="/images/hero_mountain.jpg"
         alt="Mountain Peaks and Alpine Trails"
+        onError={(e) => {
+          (e.currentTarget as HTMLImageElement).src = '/images/hero_mountain_summit.jpg';
+        }}
         className="absolute inset-0 w-full h-full object-cover opacity-35 mix-blend-overlay pointer-events-none"
       />
       <div className="absolute inset-0 bg-gradient-to-r from-stone-950 via-stone-950/80 to-stone-900/60" />
