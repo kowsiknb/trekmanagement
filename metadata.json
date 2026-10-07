@@ -1,0 +1,6 @@
+{
+  "name": "TrekSafe - Mountain Trek Safety & Risk Intelligence",
+  "description": "Comprehensive trek discovery, date-based climate risk analysis, ML hazard prediction, interactive route maps, and smart gear checklists.",
+  "requestFramePermissions": ["geolocation"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
